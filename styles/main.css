@@ -1,0 +1,12 @@
+.profile-photo{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #333
+}
+
+.profile-photo:hover{
+    transform: scale(1.05); /*Slight zoom on hover*/
+    transform: transfrom 0.3 ease;
+}
