@@ -110,4 +110,49 @@ nav a {
         line-height: 1.7;
         max-width: 600px;
     }
+    /* CSS Styling */
+#about {
+    padding: 4rem 2rem;
+    background: #f9f9f9;
+  }
+  
+  .about-content {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .bio {
+    flex: 1;
+  }
+  
+  .bio p {
+    margin-bottom: 1.2rem;
+    line-height: 1.7;
+  }
+  
+  .skill-tag {
+    display: inline-block;
+    background: #e0e9ff;
+    color: #0066ff;
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    margin-right: 0.5rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+  }
+  
+  /* Mobile Responsiveness */
+  @media (max-width: 768px) {
+    .about-content {
+      flex-direction: column;
+      text-align: center;
+    }
+    
+    .profile-photo {
+      margin-bottom: 1.5rem;
+    }
+  }
 }
