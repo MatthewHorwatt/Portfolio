@@ -105,4 +105,9 @@ nav a {
     nav li {
         margin: 0.5rem 0;
     }
+    #about p {
+        margin-bottom: 1rem;
+        line-height: 1.7;
+        max-width: 600px;
+    }
 }
