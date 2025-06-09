@@ -88,6 +88,11 @@ nav a {
     max-width: 1000px;
     margin: 0 auto;
 }
+.profile-container {
+    text-align: center;
+    margin: 0 auto;
+    padding: 20px 0;
+}
 .profile-photo {
     width: 150px;
     height: 150px;
