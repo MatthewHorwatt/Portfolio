@@ -97,9 +97,6 @@ nav a {
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    text-align: center;
-    margin: 0 auto;
-    padding: 20px 0;
     object-fit: cover;
     border: 2px solid #333;
     transition: transform 0.3s ease;
