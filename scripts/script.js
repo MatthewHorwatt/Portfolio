@@ -1,5 +1,5 @@
 // script.js
-const projects = [
+/*const projects = [
     {
       title: "Project 1",
       description: "A web app built with React and Node.js.",
@@ -9,7 +9,7 @@ const projects = [
     },
     // Add more projects...
   ];
-  
+  */
   function renderProjects() {
     const grid = document.querySelector(".project-grid");
     projects.forEach(project => {
