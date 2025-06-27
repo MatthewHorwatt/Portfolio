@@ -167,7 +167,6 @@ nav a {
 
 .contact-container {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   gap: 1.5rem;
@@ -175,86 +174,80 @@ nav a {
   margin: 0 auto;
 }
 
-.contact-method {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-/* Email Button */
-.contact-btn {
-  padding: 0.8rem 1.5rem;
-  background: #0078D4; /* Outlook blue */
-  color: white;
-  border-radius: 50px;
-  text-decoration: none;
-  font-weight: 600;
-  transition: all 0.3s ease;
-  border: 1px solid transparent;
-}
-
-/* Social Buttons */
-.social-btn {
+/* Icon Buttons */
+.contact-icon-btn,
+.social-icon-btn {
   display: inline-flex;
   align-items: center;
-  gap: 0.5rem;
-  padding: 0.8rem 1.5rem;
-  background: #f5f5f5;
-  color: #333;
-  border-radius: 50px;
-  text-decoration: none;
-  font-weight: 600;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
   transition: all 0.3s ease;
-  border: 1px solid #e0e0e0;
+  border: 2px solid transparent;
 }
 
-/* Hover Effects */
-.contact-btn:hover,
-.social-btn:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+.contact-icon-btn {
+  background: #0078D4; /* Outlook blue */
 }
 
-.contact-btn:hover {
-  background: #106EBE;
-}
-
-/* Platform-specific hover colors */
-.social-btn[href*="linkedin"]:hover {
-  background: #0077b5;
-  color: white;
-  border-color: #0077b5;
-}
-
-.social-btn[href*="github"]:hover {
-  background: #333;
-  color: white;
-  border-color: #333;
+.social-icon-btn {
+  background: #f5f5f5;
 }
 
 /* Icons */
 .contact-icon,
 .social-icon {
-  width: 20px;
-  height: 20px;
+  width: 24px;
+  height: 24px;
   object-fit: contain;
 }
 
+/* Hover Effects */
+.contact-icon-btn:hover,
+.social-icon-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.contact-icon-btn:hover {
+  background: #106EBE;
+}
+
+/* Platform-specific hover colors */
+.social-icon-btn[href*="linkedin"]:hover {
+  background: #0077b5;
+  border-color: #0077b5;
+}
+
+.social-icon-btn[href*="github"]:hover {
+  background: #333;
+  border-color: #333;
+}
+
 /* Make GitHub icon visible on dark hover */
-.social-btn[href*="github"]:hover .social-icon {
+.social-icon-btn[href*="github"]:hover .social-icon {
   filter: brightness(0) invert(1);
 }
 
 /* Responsive */
 @media (max-width: 600px) {
   .contact-container {
-    flex-direction: column;
     gap: 1rem;
+  }
+  
+  .contact-icon-btn,
+  .social-icon-btn {
+    width: 42px;
+    height: 42px;
+  }
+  
+  .contact-icon,
+  .social-icon {
+    width: 20px;
+    height: 20px;
   }
 }
 
-.social-icon {
-  width: 20px;
-  height: 20px;
-}
+
 }
