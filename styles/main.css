@@ -185,6 +185,7 @@ nav a {
   border-radius: 50%;
   transition: all 0.3s ease;
   border: 2px solid transparent;
+  left: 1000px
 }
 
 .contact-icon-btn {
@@ -230,7 +231,7 @@ nav a {
 /* Make GitHub icon visible on dark hover */
 .social-icon-btn[href*="github"]:hover .social-icon {
   filter: brightness(0) invert(1);
-  left: 1000px
+  
 }
 
 /* Responsive */
