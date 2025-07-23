@@ -23,11 +23,6 @@ body {
   object-fit: cover;
   object-position: center;
 }
-nav {
-  position: absolute; /* Changed from fixed */
-  top: 100vh; /* Starts after header */
-  width: 100%;
-}
 
 /* Navigation */
 nav {
